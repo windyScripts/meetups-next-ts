@@ -42,7 +42,7 @@ function filteredEventssPage() {
 
   const filteredEvents = getFilteredEvents({ year: numYear, month: numMonth });
   if (!filteredEvents || filteredEvents.length === 0) {
-    return <p>No events found for chosen filter.</p>;
+    return <ErrorAlert><p>No events found for chosen filter.</p></ErrorAlert>;
   }
 
   const date = new Date(numYear, numMonth - 1);
