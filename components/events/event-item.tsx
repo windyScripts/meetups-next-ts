@@ -31,7 +31,7 @@ function EventItem(props: eventInterface) {
           </div>
         </div>
         <div className={classes.actions}>
-          <Button link={exploreLink}><span>Explore Event</span><span className={classes.icon}>ArrowRightIcon</span></Button>
+          <Button link={exploreLink}><span>Explore Event</span><span className={classes.icon}>{ArrowRightIcon()}</span></Button>
         </div>
       </div>
     </li>
